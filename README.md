@@ -9,7 +9,7 @@ Do Perceptually Aligned Gradients Imply Robustness?
   <a href="https://elad.cs.technion.ac.il/">Michael Elad</a>
 </p>
 <p align="center">
-[ICML 2023 - Oral] Official Code Repository of <a href="https://arxiv.org/abs/2207.11378">Do Perceptually Aligned Gradients Imply Robustness?</a>.
+[ICML 2023 - Oral] Official Code Repository of <a href="https://arxiv.org/abs/2207.11378">Do Perceptually Aligned Gradients Imply Robustness?</a>
 </p>
 
 <p align="center">
@@ -33,13 +33,10 @@ conda env create -f environment.yml
 
 ### Preparing Perceptually Aligned Gradients Data
 
-The Perceptually Aligned Gradients' realizations considered in the paper for the CIFAR-10 are provided in the following table:
+The Perceptually Aligned Gradients' realization for the Score-Based Gradients for the CIFAR-10 dataset is provided in the following table:
 
 PAG realization | Data | Labels
 --- | :---: | :---: 
-One Image | <a href="https://drive.google.com/file/d/1kfkzQcq5N_TKHy5ZX2JdLgMqQXEjzYuX/view?usp=drive_link">Download</a> | <a href="https://drive.google.com/file/d/1p2803WWQfqH3Pf3XSEgku0BCkCfDybEw/view?usp=drive_link">Download</a>
-Class Mean |<a href="https://drive.google.com/file/d/1qGIqdvUK2GCwPZGt7DOlpdCp1QFWmYQo/view?usp=drive_link">Download</a> | <a href="https://drive.google.com/file/d/1bJEiz61hfCPdiJA7WFWBML-4jlRp00p5/view?usp=drive_link">Download</a>
-Nearest Neighbor |  <a href="https://drive.google.com/file/d/1MRF6lzS9Maly_aPfSfePsLa0CaYCNs3a/view?usp=drive_link">Download</a> | <a href="https://drive.google.com/file/d/1JzjiF8YUyPI6NRA2CAZEtv3Nkb7fkLxQ/view?usp=drive_link">Download</a>
 Score-Based Gradients |  <a href="https://drive.google.com/file/d/1kpUNM3j7V_YxQ7xQuDe_M_hHZSOvkCOx/view?usp=drive_link">Download</a> | <a href="https://drive.google.com/file/d/12pIOWxCHCLjlUPwxvFS87u93GBqWO9XK/view?usp=drive_link">Download</a>
 
 The data should be placed in the data folder, forming the following structure:
@@ -48,9 +45,8 @@ The data should be placed in the data folder, forming the following structure:
     ├── configs
     │   ├── ......
     ├── data
-    │   ├── c10_cm_data.pt
-    │   ├── c10_cm_label.pt
-    │   ├── ......
+    │   ├── c10_sbg_data.pt
+    │   ├── c10_sbg_label.pt
     ├── models
     │   ├── ......
     ├── TRAIN_CIFAR10.py
