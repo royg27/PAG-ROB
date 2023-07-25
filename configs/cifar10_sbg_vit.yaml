@@ -1,0 +1,24 @@
+seed: 3407
+use_wandb: False  # enable for reporting metrics to wandb
+wandb_project: project_name  # enter your project name here
+wandb_entity: project_entity  # enter your entity here
+# dataset configuration
+chekpoint_folder: "cifar_checkpoints"
+checkpoint_freq: 1
+grad_source: 'sbg'
+
+# loss and optimization configuration
+pag_coeff: 3.0
+num_grads_per_image: 10
+step_pag_coeff: True  # stabilizes the training but with a (small) robustness cost. Disable this to maximize performance
+
+# architecture
+arch: vit
+
+
+# training configuration
+epochs: 100
+batch_size: 64
+weight_decay: 0.0001
+lr: 0.01
+momentum: 0.9
